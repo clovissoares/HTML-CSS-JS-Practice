@@ -1,0 +1,136 @@
+body {
+    --primary-color: #13143C;
+    --background-color: #FFFAF2;
+    --button-background: #FFFFFF;
+    --button-border: #DFDFDF;
+    --progress-color: #F17A37;
+    --progress-background: #DFDFDF;
+
+    --font-family: 'Poppins', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    height: 228px;
+    width: 750px;
+    padding: 2em;
+    border-radius: 25px;
+    background-color: var(--background-color);
+}
+
+.profile {
+    grid-column: 1;
+}
+
+.image-wrapper {
+    height: 75px;
+    width: 75px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100%;
+}
+
+.profile-username {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-tag {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.profile-socials {
+    display: flex;
+}
+
+.rounded-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--button-border);
+    border-radius: 10px;
+    background-color: var(--button-background);
+    height: 41px;
+    width: 41px;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.rounded-link i {
+    color: var(--primary-color);
+}
+
+.info {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.info-progress {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.progress-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: auto;
+}
+
+.progress-icon{
+    color: var(--primary-color);
+    align-self: center;
+}
+
+.progress {
+    width: 100%;
+    background: var(--progress-background);
+    border-radius: 25px;
+    margin-bottom: auto;
+}
+  
+.progress-bar {
+    height: 10px;
+    border-radius: 25px 0 0 25px;
+    width: 80%;
+    background-color: var(--progress-color);
+}
+
+.info-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+.info-text b {
+    font-weight: 700;
+}
+
+.info-button {
+    color: var(--button-background);
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    padding: 1em 4em;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+}
