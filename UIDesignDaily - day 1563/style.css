@@ -1,0 +1,136 @@
+body {
+    --background-color: #121129;
+    --font-color: #C4C0FF;
+    --font-tag: #FFFFFF;
+    --link-color: #756BFF;
+    --tag-closed: #FF5EAB;
+    --tag-open: #00BD9B;
+    --button-color: #756BFF;
+    --border-color: #2A2753;
+    --font-family: 'Mulish', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    background-color: var(--background-color);
+    padding: 2em;
+    border-radius: 15px;
+    width: 70%;
+    position: relative;
+}
+
+.background-contrast {
+    position: absolute;
+    background: linear-gradient(148deg, rgba(255,93,171,1) 0%, rgba(117,107,255,1) 100%);
+    height: 65%;
+    width: 90%;
+    top: -50px;
+    left: -50px;
+    border-radius: 0 25px 25px 25px;
+    z-index: -10000;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-location {
+    width: 40%;
+    padding: 1em 0;
+    padding-left: 10px;
+    background: none;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    margin-right: auto;
+}
+
+.input-location::placeholder{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: 14px;
+}
+
+.locate {
+    background: none;
+    border: none;
+    color: var(--button-color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.locate i {
+    margin-right: 5px;
+}
+
+.location-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.location-tag {
+    font-weight: 400;
+    font-size: 10px;
+    border-radius: 19px;
+    padding: .5em;
+    color: var(--font-tag);
+    text-transform: uppercase;
+}
+
+.location-tag.closed {
+    background-color: var(--tag-closed);
+}
+
+.location-tag.open {
+    background-color: var(--tag-open);
+}
+
+.location-details {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.location-time {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.location-time i {
+    margin-right: 5px;
+}
+
+.view-locations {
+    width: 100%;
+    padding: 1em 0;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--font-tag);
+    font-family: var(--font-family);
+    font-weight: 700;
+}
