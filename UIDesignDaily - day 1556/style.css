@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+body {
+    --font-color: #171A3C;
+    --font-color-secondary: #698eb9;
+    --button-background: #171A3C;
+    --background-color: #FFFFFF;
+    --background-color-secondary: #EBEDFD;
+
+    --font-family: 'Poppins', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+main {
+    padding: 3rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 40px;
+}
+
+.header a {
+    color: var(--font-color);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header input {
+    visibility: hidden;
+    position: absolute;
+}
+
+#toggle {
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+}
+
+.timer {
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.content-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.subtimer {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.rounded-button {
+    padding: 1rem;
+    border-radius: 50px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--button-background);
+    color: var(--background-color);
+    border: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.grid-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.grid-title p {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--font-color-secondary);
+    margin-right: auto;
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    width: 33%;
+}
+
+.grid-title p:last-child {
+    margin-right: 1rem;
+}
+
+.grid-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 10px;
+    
+}
+
+.grid-content:nth-child(2n) {
+    background-color: var(--background-color-secondary);
+}
+
+.grid-content p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: auto;
+    width: 33%;
+    padding: 1rem .5rem;
+    text-align: center;
+}
+
+.grid-content p:first-child {
+    padding: 0;
+    margin-right: 6%;
+}
