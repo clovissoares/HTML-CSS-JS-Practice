@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #291F68;
+    --font-color-secondary: #FFFFFF;
+    --background-color: #FFFFFF;
+    --button-color: #291F68;
+    --button-color-secondary: #FFFFFF;
+    --font-small-text: #7f79a4;
+
+    --font-family: 'Poppins', sans-serif;
+
+    --font-profile: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.profile {
+    background-color: var(--background-color);
+    border-radius: 25px;
+    padding: 2rem;
+    position: relative;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.image-wrapper{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.username {
+    font-family: var(--font-profile);
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.location p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 277px;
+    height: 44px;
+    margin-bottom: 10px;
+    padding: .7rem 6rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn.follow {
+    background-color: var(--button-color);
+    color: var(--font-color-secondary);
+}
+
+.btn.message {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border: 1px solid var(--button-color);
+}
+
+.background-link {
+    position: absolute;
+    border-radius: 50px;
+    background-color: var(--button-color);
+    width: 265px;
+    height: 200px;
+    z-index: -1000;
+    transform: translateX(100%) translateY(-30%);
+}
+
+.content {
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 25px;
+    padding: 2.5rem 3rem;
+    transform: translateX(170%) translateY(-55%);
+}
+
+.title {
+    font-family: var(--font-profile);
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.content-details i {
+    margin-right: 5px;
+}
+
+.content-details p {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.date {
+    color: var(--font-small-text);
+    font-size: 10px;
+}

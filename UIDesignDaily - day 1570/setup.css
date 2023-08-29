@@ -1,0 +1,10 @@
+.wrapper {
+    background: #CACACA;
+    border-radius: 1em;
+    padding: 18.5rem 35rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
