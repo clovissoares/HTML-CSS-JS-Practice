@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+body {
+    --font-color: #0C0E41;
+    --background-color: #FFFFFF;
+    --button-color: #0C0E41;
+    --button-font: #FFFFFF;
+    --icon-color: #C83974;
+    --icon-background: #FFE9F2;
+    --twitter-color: #158ABB;
+    --facebook-color: #205195;
+
+
+    --font-family: 'Poppins', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: #CACACA;
+}
+
+.notification-button {
+    padding: 1.3rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: var(--button-font);
+    background-color: var(--button-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.notification-window {
+    position: absolute;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: none;
+    white-space: nowrap;
+    transform: translateX(-88%) translateY(6%);
+}
+
+.notification-window.active {
+    display: block;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.notification-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notification-details i {
+    color: var(--icon-color);
+    padding: 1.5rem;
+    background-color: var(--icon-background);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-button {
+    display: flex;
+    align-items: center;
+    padding: .7rem;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.rounded-button i {
+    margin-right: 10px;
+}
+
+.rounded-button.twitter {
+    color: var(--twitter-color);
+    border: 1px solid var(--twitter-color);
+}
+
+.rounded-button.facebook {
+    color: var(--facebook-color);
+    border: 1px solid var(--facebook-color);
+}
