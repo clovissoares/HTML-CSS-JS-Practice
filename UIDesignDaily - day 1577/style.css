@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #0E0E38;
+    --background-color: #EFF0F1;
+    --background-highlight: #FFFFFF;
+
+    --font-family: 'Poppins', sans-serif;
+    --font-family-title: 'Merriweather', serif;
+
+    background-color: var(--background-color);
+
+    padding: 3rem 5rem;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.tags p {
+    padding: .6rem;
+    background-color: var(--background-highlight);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    background-color: var(--background-highlight);
+    width: 25%;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.card-images {
+    display: grid;
+    grid-template-areas: 
+    "big big big"
+    "big big big"
+    "little little little";
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.card-images > img:first-child {
+    height: 200px;
+    width: 100%;
+    grid-area: big;
+}
+
+.card-images img {
+    width: 100%;
+    background-origin: border-box;
+    border-radius: 20px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-text > p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+.card-text i {
+    margin-right: 5px;
+}
+
+.card-text > p:last-child {
+    font-size: 14px;
+    font-weight: 400;
+}
