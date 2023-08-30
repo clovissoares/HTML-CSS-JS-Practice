@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #171D3C;
+    --font-color-secondary: #FFFFFF;
+    --background-color: #FFFFFF;
+    --tag-background-color: #81BD45;
+    --stock-button-background-color: #E0F2FA;
+    --border-color: #C6C9D2;
+    --button-color: #4378FF;
+    --small-button-background: #E0F2FA;
+
+    --font-family: 'Poppins', sans-serif;
+    --font-family-title: 'Merriweather', serif;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    background-color: var(--background-color);
+    width: 50%;
+    border-radius: 25px;
+    padding: 3rem;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.id {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-wrapper {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2rem;
+}
+
+.product-stock {
+    font-size: 10px;
+    font-weight: 700;
+    padding: .4rem;
+    border-radius: 23px;
+    width: fit-content;
+    color: var(--font-color-secondary);
+    background-color: var(--tag-background-color);
+    
+}
+
+.order-size {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.btn {
+    font-size: 20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--stock-button-background-color);
+    cursor: pointer;
+}
+
+.minus {
+    margin-right: 5px;
+}
+
+.order-size input {
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    width: 34px;
+    padding: 0;
+    text-align: center;
+}
+
+.pricing-object {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card > .pricing-object {
+    margin-top: 30px;
+}
+
+.card > .pricing-object ~ .pricing-object {
+    margin-top: 0;
+}
+
+.pricing-object p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pricing-object p:last-child {
+    font-weight: 700;
+}
+
+.pricing-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pricing-total p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.promotional-code {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: var(--button-color);
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--font-color-secondary);
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 50px;
+}
