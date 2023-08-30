@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #38196B;
+    --font-color-secondary: #000000;
+    --background-color: #FFFFFF;
+    --close-button-color: #9887b5;
+    --close-button-background-color: #F4EDFF;
+    --block-button-color: #FF1212;
+    --block-button-border-color: #FFB2B2;
+    --allow-button-color: #0ABE31;
+    --allow-button-border-color: #9EEBAF;
+
+    --icon-color: #FFFFFF;
+    --icon-background-color: linear-gradient(150deg, rgba(154,176,255,1) 0%, rgba(235,115,255,1) 100%);
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    color: var(--font-color);
+    font-family: var(--font-family);
+}
+
+.card {
+    background-color: var(--background-color);
+    padding: 2rem 3rem;
+    border-radius: 25px;
+}
+
+.card > div:first-child {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.card > div:first-child h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 70px;
+}
+
+.card > div:first-child i::before {
+    padding: 16px 19px 16px 19px;
+    border-radius: 50px;
+    color: var(--close-button-color);
+    background-color: var(--close-button-background-color);
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content i {
+    padding: 1rem;
+    color: var(--icon-color);
+    margin-right: 10px;
+    border-radius: 15px;
+    background: var(--icon-background-color);
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color-secondary);
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btns > button {
+    background-color: transparent;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btns > button:first-child {
+    margin-right: 10px;
+    border: 1px solid var(--block-button-border-color);
+    color: var(--block-button-color);
+}
+
+.btns > button:last-child {
+    border: 1px solid var(--allow-button-border-color);
+    color: var(--allow-button-color);
+}
