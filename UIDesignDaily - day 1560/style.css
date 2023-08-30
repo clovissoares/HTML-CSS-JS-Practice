@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #FFFFFF;
+    --background-color: #47518B;
+    --button-background-color: #9D50FF;
+    --input-border-color: #747DB0;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 2.5rem;
+    width: 600px;
+}
+
+.card > p:first-child {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card > p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 75%;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.card > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card > div > input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 3px solid var(--input-border-color);
+    outline: none;
+    background-color: transparent;
+    width: 55%;
+    margin-right: 10px;
+}
+
+.card > div > input::placeholder {
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+.card > div > button {
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: var(--button-background-color);
+    border: none;
+}
+
+.card > p:last-child {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.card > p:last-child > b {
+    text-decoration: underline;
+}
