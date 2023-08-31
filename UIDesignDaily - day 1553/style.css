@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #C0C7F7;
+    --background-color: #1B2142;
+    --progress-background-color: #11152F;
+    --progress-color: linear-gradient(90deg, rgba(73,98,255,1) 0%, rgba(77,217,210,1) 100%);
+    --input-color: #4962FF;
+
+    --font-family: 'Mulish', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 20px;
+}
+
+.card > p:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.bar {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.bar div {
+    height: 10px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: var(--progress-background-color);
+    background-size: 10%;
+    margin-right: 5px;
+}
+
+.bar div:nth-child(1) {
+    background: var(--progress-color);
+}
+.bar div:nth-child(2) {
+    background: var(--progress-color);
+}
+.bar div:nth-child(3) {
+    background: var(--progress-color);
+}
+.bar div:nth-child(4) {
+    background: var(--progress-color);
+}
+.bar div:nth-child(5) {
+    background: var(--progress-color);
+}
+.bar div:nth-child(6) {
+    background: var(--progress-color);
+}
+
+.card > p:last-of-type {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.checklist {
+    position: absolute;
+    background-color: var(--background-color);
+    transform: translateX(300%) translateY(-100%);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.checklist h2 {
+    margin-bottom: 20px;
+    font-family: var(--title-font-family);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.checklist div {
+    margin-bottom: 10px;
+}
+
+.checklist input {
+    appearance: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    outline: 1px solid var(--font-color);
+    vertical-align: top;
+}
+
+.checklist input:checked {
+    outline: none;
+    background-color: var(--input-color);
+}
+
+.checklist input:checked::before { 
+    font-family: FontAwesome;
+    content: "\f00c";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin-top: 2px;
+}
+
+.checklist label {
+    vertical-align: top;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 600;
+}
