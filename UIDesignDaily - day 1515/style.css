@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #0C1431;
+    --background-color: #FFFFFF;
+    --border-color: #C0C8E3;
+    --button-background-color: #000000;
+    --button-font-color: #FFFFFF;
+    --checkbox-color: #2065F6;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+.card > div {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 150px;
+    border: 1px solid var(--border-color);
+    padding: 3rem;
+    white-space: nowrap;
+    
+}
+
+.card > div:first-child {
+    justify-content: center;
+}
+
+.checkbox > div:first-child {
+    margin-bottom: 20px;
+}
+
+.checkbox input{
+    appearance: none;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    background: var(--background-color);
+    border: 1px solid var(--checkbox-color);
+    transition: background 0.3s;
+}
+
+.checkbox input::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--background-color);
+    transform: scale(0.6);
+    opacity: 1;
+}
+
+.checkbox input:checked {
+    background: var(--checkbox-color);
+	border: 1px solid var(--checkbox-color);
+}
+
+.checkbox label {
+    margin-left: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+	vertical-align: top;
+    cursor: pointer;
+}
+
+.plan > p:first-child {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.plan > p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.plan > button {
+    color: var(--button-font-color);
+    background-color: var(--button-background-color);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    width: 120px;
+    align-self: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.plan > div {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.plan > div > p {
+    margin-right: 5px;
+}
