@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --font-color: #FFFFFF;
+    --font-color-secondary: #485258;
+    --background-color-area-1: #FB896B;
+    --background-color-area-2: #FB6B6B;
+    --background-color-area-3: #F1A864;
+    --background-color-area-4: #FBD36B;
+    --background-color-area-5: #485258;
+    --button-background-color: #FFFFFF;
+    --button-font-color: #485258;
+
+
+    --font-family: 'Poppins', sans-serif;
+};
+
+* {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+    "area1 area2 area3"
+    "area4 area5 area5";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer > div {
+    padding: 4rem;
+}
+
+footer > div > i {
+    color: var(--font-color);
+}
+
+footer > div > p {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 300;
+    padding: .7rem;
+}
+
+footer > div > p:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+footer > div > p:first-of-type {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 0 0 .7rem;
+}
+
+footer > div > p:first-of-type:hover {
+    background-color: transparent;
+}
+
+footer > div > p:first-of-type i {
+    margin-right: 15px;
+}
+
+footer > div:first-child {
+    background-color: var(--background-color-area-1);
+}
+
+footer > div:first-child + div {
+    background-color: var(--background-color-area-2);
+}
+
+footer > div:first-child + div + div {
+    background-color: var(--background-color-area-3);
+}
+
+footer > div:first-child + div + div + div {
+    background-color: var(--background-color-area-4);
+}
+
+footer > div:first-child + div + div + div p {
+    color: var(--font-color-secondary);
+}
+
+footer > div:last-child {
+    background-color: var(--background-color-area-5);
+    grid-area: area5;
+}
+
+footer > div:last-child > p {
+    padding: 0;
+    width: 45%;
+}
+
+footer > div:last-child > p + p {   
+    margin-bottom: 30px;
+}
+
+footer > div:last-child > p + p:hover{
+    background-color: transparent;
+}
+
+footer > div button {
+    padding: 1rem;
+    background-color: var(--button-background-color);
+    color: var(--button-font-color);
+    font-family: var(--font-family);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
