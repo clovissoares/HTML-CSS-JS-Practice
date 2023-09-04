@@ -7,8 +7,18 @@ body {
     --progress-color: linear-gradient(90deg, rgba(73,98,255,1) 0%, rgba(77,217,210,1) 100%);
     --input-color: #4962FF;
 
+
     --font-family: 'Mulish', sans-serif;
     --title-font-family: 'Merriweather', serif;
+
+    /*Binary counter to div*/
+    --bit-0: 0;
+    --bit-1: 0;
+    --bit-2: 0;
+    --bit-3: 0;
+    --div-total: 9;
+    --start-color: #FFFFFF;
+    --final-color: #000000;
 }
 
 * {
@@ -37,37 +47,44 @@ body {
     margin-bottom: 40px;
 }
 
-.bar {
+#bar {
     display: flex;
     margin-bottom: 15px;
 }
 
-.bar div {
+#bar > div:nth-child(2n) {
+    --bit-0: 1;
+}
+
+#bar > div:nth-child(4n+3), div:nth-child(4n) {
+    --bit-1: 1;
+}
+
+#bar > div:nth-child(8n), div:nth-child(8n-1), div:nth-child(8n-2), div:nth-child(8n-3) {
+    --bit-2: 1;
+}
+
+#bar > div:nth-child(16n), div:nth-child(16n-1), div:nth-child(16n-2), div:nth-child(16n-3), div:nth-child(16n-4), div:nth-child(16n-5), div:nth-child(16n-6), div:nth-child(16n-7) {
+    --bit-3: 1;
+}
+
+#bar div{
     height: 10px;
     border-radius: 25px;
     width: 100%;
     background-color: var(--progress-background-color);
-    background-size: 10%;
     margin-right: 5px;
+    --byte: calc(var(--bit-0) + 2 * var(--bit-1) + 4 * var(--bit-2) + 8 * var(--bit-3));  
 }
 
-.bar div:nth-child(1) {
-    background: var(--progress-color);
-}
-.bar div:nth-child(2) {
-    background: var(--progress-color);
-}
-.bar div:nth-child(3) {
-    background: var(--progress-color);
-}
-.bar div:nth-child(4) {
-    background: var(--progress-color);
-}
-.bar div:nth-child(5) {
-    background: var(--progress-color);
-}
-.bar div:nth-child(6) {
-    background: var(--progress-color);
+#bar div.active {
+    --percent: calc(100% - (100% / (var(--div-total) - 1)) * var(--byte));
+    background-color: 
+    color-mix(
+        in srgb, 
+        var(--final-color), 
+        var(--start-color) 
+        var(--percent));
 }
 
 .card > p:last-of-type {
@@ -116,12 +133,12 @@ body {
     align-items: center;
     vertical-align: middle;
     color: #FFFFFF;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .checklist label {
     vertical-align: top;
-    line-height: 21px;
+    line-height: 25px;
     font-size: 18px;
     font-weight: 600;
 }
