@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #1E1D4E;
+    --background-color: #FFFFFF;
+    --tag-font-color: #1E1D4E;
+    --tag-background-color: #F3F2FB;
+    --button-font-color: #FFFFFF;
+    --button-background-color: #1E1D4E;
+
+    --font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+body {
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.title-sub-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sub-tag h1{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 30px;
+}
+
+.title-sub-tag h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 40%;
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.tags p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    padding: .5rem;
+    border-radius: 25px;
+    background-color: var(--tag-background-color);
+    color: var(--tag-font-color);
+}
+
+.tags i {
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-chevron-left {
+    margin-right: 50px;
+}
+
+.card {
+    text-align: center;
+    width: 25%;
+}
+
+.card img {
+    object-fit: cover;
+    mask-origin: margin-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-family: var(--title-font-family);
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.card button {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 1rem;
+    font-family: var(--font-family);
+    color: var(--button-font-color);
+    background-color: var(--button-background-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fa-chevron-right {
+    margin-left: 50px;
+}
