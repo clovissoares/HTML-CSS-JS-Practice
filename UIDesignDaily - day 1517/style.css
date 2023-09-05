@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #0E183E;
+    --background-color: #FFFFFF;
+    --button-font-color: #FFFFFF;
+    --button-background-color: #0E183E;
+    --line-background-color: #E8EBF4;
+    --line-border-color: #BBC6E7;
+    --fill-color: #FC9861;
+    --fill-width: 50%;
+    --percent-font-color: #000000;
+
+
+    --font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    padding: 4rem 3rem;
+    border-radius: 25px;
+    background-color: var(--background-color);
+    width: 400px;
+    position: relative;
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 30px;
+}
+
+.percent > p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.line {
+    height: 15px;
+    border-radius: 50px;
+    background-color: var(--line-background-color);
+    border: 1px solid var(--line-border-color);
+    width: 100%;
+    margin-right: 10px;
+}
+
+.fill {
+    height: 15px;
+    border-radius: 50px;
+    background-color: var(--fill-color);
+    width: var(--fill-width);
+}
+
+.content p {
+    width: 12%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card button {
+    margin-top: 20px;
+    padding: .8rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--button-background-color);
+    color: var(--button-font-color);
+}
+
+.summary {
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 25px;
+    padding: 4rem 3rem;
+    transform: translateX(600px) translateY(-250px);
+    width: 250px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-right: auto;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.summary-content {
+    display: flex;
+    align-items: center;
+}
+
+.summary-content.first {
+    margin-bottom: 30px;
+}
+
+.text {
+    margin-right: auto;
+}
+
+.text p:first-of-type {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text p:last-of-type {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.summary-content button {
+    padding: .7rem 1.7rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: var(--button-background-color);
+    color: var(--button-font-color);
+}
