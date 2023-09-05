@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --header-font-color: #FFFFFF;
+    --header-background-color: #626CD6;
+    --header-button-font-color: #262040;
+    --header-button-background-color: #FFFFFF;
+    --title-font-color: #6F7189;
+    --font-color: #262040;
+    --background-color: #FFFFFF;
+    --background-highlight-color: #F1F2FF;
+
+    --font-family: 'Poppins', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: 25px;
+    width: 500px;
+}
+
+.header {
+    background-color: var(--header-background-color);
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-radius: 15px;
+    color: var(--header-font-color);
+    margin-bottom: 10px;
+    box-shadow: 10px 22px 15px -3px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+}
+
+.header > div p {
+    font-weight: 400;
+    margin-right: 30px;
+    width: 70%;
+    line-height: 1.4;
+}
+
+.header > div button {
+    border: none;
+    outline: none;
+    background-color: var(--header-button-background-color);
+    color: var(--header-button-font-color);
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    padding: 1rem;
+}
+
+.content h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--title-font-color);
+    margin-bottom: 10px;
+    padding: 0 .8rem;
+}
+
+.content p {
+    padding: .5rem .8rem;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.content p:hover {
+    background-color: var(--background-highlight-color);
+}
+
+.docs {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.resources {
+    width: 50%;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #120C35;
+    --font-secondary-color: #595572;
+    --background-color: #FFFFFF;
+    --menu-font-color: #FFFFFF;
+    --menu-background-color: #120C35;
+    --menu-background-highlight-color: #2D2559;
+    --border-color: #ECF0FC;
+
+    --font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    background-color: var(--background-color);
+    text-align: center;
+    width: 350px;
+}
+
+.card img {
+    object-fit: cover;
+    mask-origin: margin-box;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 10px solid var(--border-color);
+}
+
+.card h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--title-font-family);
+    margin-bottom: 20px;
+}
+
+.card > p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--font-secondary-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu i {
+    margin-bottom: 20px;
+}
+
+.menu li {
+    padding: .5rem;
+    border: 2px solid var(--border-color);
+    width: 28%;
+    white-space: nowrap;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu li > p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dropdown {
+    position: absolute;
+    visibility: visible;
+    transform: translateX(110px) translateY(-120px);
+    background-color: var(--menu-background-color);
+    color: var(--menu-font-color);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.dropdown li {
+    border: none;
+    width: 85%;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.dropdown li:hover {
+    background-color: var(--menu-background-highlight-color);
+}
+
+.menu li:last-of-type:hover .dropdown {
+    visibility: visible;
+}
