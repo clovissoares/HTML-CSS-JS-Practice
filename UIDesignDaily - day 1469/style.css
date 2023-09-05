@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #0F1730;
+    --background-color: #FFFFFF;
+    --button-font-color: #FFFFFF;
+    --button-background-color: #0F1730;
+    --border-color: #AAB7DD;
+    --tag-font-color: #FFFFFF;
+    --tag-background-color: #11B3E5;
+    --middle-background-color: #FBFCFF;
+    --image-border-color: #E7EAF5;
+
+    --font-family: 'Mulish', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 25px;
+    width: 450px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top img {
+    object-fit: cover;
+    mask-origin: margin-box;
+    height: 125px;
+    width: 125px;
+    border-radius: 25px;
+    border: 15px solid var(--image-border-color);
+    margin-right: 20px;
+}
+
+.top h2 {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 10px;
+}
+
+.top p:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: 600;
+    padding: .4rem;
+    background-color: var(--tag-background-color);
+    color: var(--tag-font-color);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--middle-background-color);
+    margin-bottom: 40px;
+}
+
+.middle div p:first-child {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 10px;
+}
+
+.middle div i {
+    margin-right: 10px;
+}
+
+.middle div p:last-child {
+    font-size: 16px;
+    font-weight: 600;
+} 
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom button {
+    padding: 1rem;
+    width: 48.5%;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+}
+
+.primary {
+    border: none;
+    background-color: var(--button-background-color);
+    color: var(--button-font-color);
+}
+
+.secondary {
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+}
