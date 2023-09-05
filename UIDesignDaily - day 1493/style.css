@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #1A2346;
+    --background-color: #ECD8CA;
+    --item-background-color: #FFFFFF;
+    --tag-background-color: #00B7A1;
+    --tag-font-color: #FFFFFF;
+    --tag-closed-color: #F46A58;
+    --border-color: #F8E0DD;
+
+    --title-font-family: 'Merriweather', serif;
+    --font-family: 'Poppins', sans-serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 25px;
+    position: relative;
+}
+
+.card > div {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--item-background-color);
+    border-radius: 25px;
+    margin-right: 10px;
+    position: relative;
+    opacity: .8;
+}
+
+.card> div:hover {
+    opacity: 1;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card > div:last-of-type {
+    padding: 2.5rem 2.8536rem;
+}
+
+.card > div i {
+    margin-bottom: 10px;
+}
+
+.card > div h3 {
+    font-weight: 500;
+}
+
+.card > div p {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem;
+    background-color: var(--tag-background-color);
+    border-radius: 10px;
+    color: var(--tag-font-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal {
+    position: absolute;
+    width: 330px;
+    translate: 170% -5%;
+    padding: 1rem;
+    background-color: var(--item-background-color);
+    border-radius: 10px;
+}
+
+.header {
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.header h3 {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search input {
+    padding: .5rem;
+    width: 20%;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    outline: none;
+}
+
+.search input::placeholder {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.search i {
+    margin-right: 10px;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.head h4 {
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+}
+
+.head p {
+    padding: .3rem;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--tag-font-color);
+    background-color: var(--tag-closed-color);
+    border-bottom: 0;
+}
+
+.content > p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.modal > button {
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--tag-background-color);
+    color: var(--tag-font-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
