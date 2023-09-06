@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --font-color: #000000;
+    --title-font-color: #1B2442;
+    --background-color: #E5E5E5;
+    --card-background-color: #FFFFFF;
+    --button-font-color: #000000;
+    --button-highlight-font-color: #FFFFFF;
+    --button-highlight-background-color: #000000;
+    --date-background-color: #ECEFF8;
+
+    --text-font-family: 'IBM Plex Sans', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+    --date-font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    padding: 3rem 7rem 0 7rem;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 30px;
+    color: var(--title-font-color);
+}
+
+.card {
+    background-color: var(--card-background-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.card:hover {
+    box-shadow: 7px 19px 15px -3px rgba(0,0,0,0.1);
+}
+.date {
+    padding: 2rem;
+    background-color: var(--date-background-color);
+    margin-right: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+    height: 75px;
+    width: 75px;;
+}
+
+.date p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--date-font-family);
+    color: var(--title-font-color);
+    margin-bottom: 10px;
+}
+
+.date p:last-child {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--title-font-family);
+    color: var(--title-font-color);
+}
+
+.content h2{
+    font-size: 26px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    color: var(--title-font-color);
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--text-font-family);
+    color: var(--font-color);
+    width: 70%;
+}
+
+.card button {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-bottom: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: var(--text-font-family);
+    color: var(--font-color);
+    padding: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card button > p {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.card button:hover {
+    background-color: var(--button-highlight-background-color);
+    color: var(--button-highlight-font-color);
+}
