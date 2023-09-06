@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --font-color: #121F38;
+    --background-color: #FFFFFF;
+    --tag-font-color: #FFFFFF;
+    --tag-background-color-1: #FF68A7;
+    --tag-background-color-2: #68A4FF;
+    --border-color-1: #FF68A7;
+    --border-color-2: #68A4FF;
+    --button-font-color-1: #E02E79;
+    --button-font-color-2: #1B65D6;
+    --button-background-color-1: #FFE8F1;
+    --button-background-color-2: #EDF4FF;
+
+    --font-family: 'Mulish', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.card {
+    background-color: var(--background-color);
+    margin-right: 30px;
+    padding: 4rem;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.pink {
+    border: 1px solid var(--border-color-1);
+}
+
+.blue {
+    border: 1px solid var(--border-color-2);
+}
+
+.card i {
+    color: var(--tag-font-color);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pink i {
+    background-color: var(--tag-background-color-1);
+}
+
+.blue i {
+    background-color: var(--tag-background-color-2);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+
+.card button {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pink button {
+    color: var(--button-font-color-1);
+    background-color: var(--button-background-color-1);
+}
+
+.blue button {
+    color: var(--button-font-color-2);
+    background-color: var(--button-background-color-2);
+}
