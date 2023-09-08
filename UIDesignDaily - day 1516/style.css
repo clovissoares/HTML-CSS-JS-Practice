@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-color: #1D235A;
+    --font-highlight-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --background-secondary-color: #EFF0FF;
+    --background-highlight-color: linear-gradient(90deg, rgba(144,200,241,1) 0%, rgba(111,108,245,1) 100%);
+    --graph-font-color: #6E729B;
+    --graph-line-color: #7273F5;
+    --graph-line-color-2: #F572B9;
+    --graph-line-height: 200px;
+    --graph-line-height-2: 200px;
+
+    
+    --font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    width: 600px;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--title-font-family);
+    margin-bottom: 20px;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.time > div {
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 50px;
+    background-color: var(--background-secondary-color);
+    margin-right: auto;
+}
+
+.time > div p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.time > div p.active {
+    background: var(--background-highlight-color);
+    color: var(--font-highlight-color);
+}
+
+.time > p {
+    font-size: 48px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.graph {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--graph-font-color);
+    margin-bottom: 10px;
+}
+
+.y > p {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.y > p::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 555px;
+    border-top: 1px solid var(--graph-font-color);
+    opacity: .5;
+    top: 7px;
+    left: 30px;
+}
+
+.x {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.x > div {
+    position: relative;
+}
+
+.x > div .line1 {
+    position: absolute;
+    height: var(--graph-line-height);
+    width: 10px;
+    border-radius: 50px;
+    background-color: var(--graph-line-color);
+    bottom: 57px;
+}
+
+.x > div .line2 {
+    position: absolute;
+    height: var(--graph-line-height-2);
+    width: 4px;
+    border-radius: 50px;
+    background-color: var(--graph-line-color-2);
+    bottom: 57px;
+    translate: 13px 0;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.legend p::before {
+    content: ".";
+    font-size: 100px;
+    color: var(--graph-line-color);
+    line-height: 0;
+}
