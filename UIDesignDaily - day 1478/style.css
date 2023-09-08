@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --font-color: #1B2B5C;
+    --font-secondary-color: #737e9b;
+    --background-color: #FFFFFF;
+    --input-background-color: #FBFCFF;
+    --button-font-color: #EBEFFA;
+    --button-background-color: #1B2B5C;
+    --button-background-color-2: #EBEFFA;
+
+    --font-family: 'Mulish', sans-serif;
+    --title-font-family: 'Merriweather', serif;
+    
+    font-family: var(--font-family);
+    color: var(--font-color)
+}
+
+.card {
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    width: 500px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: var(--title-font-family);
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.options label {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    appearance: none;
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--font-color);
+}
+
+.options input:checked {
+    background-color: var(--font-color);
+    box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+}
+
+.options span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card > input {
+    width: 80%;
+    height: 70px;
+    background-color: var(--input-background-color);
+    outline: none;
+    border: 1px solid var(--font-secondary-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+.card > input::placeholder {
+    background-color: var(--input-background-color);
+}
+
+.card > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--font-secondary-color);
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+.card > p > a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btns button {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btns button:first-child {
+    color: var(--font-color);
+    background-color: var(--button-background-color-2);
+    margin-right: 10px;
+}
+
+.btns button:last-child {
+    color: var(--background-color);
+    background-color: var(--button-background-color);
+}
